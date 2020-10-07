@@ -22,7 +22,6 @@ while cap.isOpened():
 
 cap.release()
 
-#cv2.imwrite('face.png',img)
 
 
 
