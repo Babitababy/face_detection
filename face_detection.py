@@ -1,10 +1,10 @@
 import cv2
 
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-cap=cv2.VideoCapture(0)
+capture=cv2.VideoCapture(0)
 
-while cap.isOpened():
-    _,img=cap.read()
+while capture.isOpened():
+    _,img=capture.read()
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
@@ -19,7 +19,7 @@ while cap.isOpened():
 
 
 
-cap.release()
+capture.release()
 
 
 
